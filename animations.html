@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Custom Animation</title>
+
+<script src="jquery-4.0.0.min.js"></script>
+<link rel="stylesheet" href="ani.css">
+
+<script>
+
+$(document).ready(function(){
+
+
+$("#moveBtn").click(function(){
+$("#robot").animate({
+left:'300px'
+},1000);
+});
+
+
+$("#fadeBtn").click(function(){
+$("#robot").animate({
+opacity:0.3
+},1000);
+});
+
+
+$("#resizeBtn").click(function(){
+$("#robot").animate({
+width:'150px',
+height:'150px',
+lineHeight:'150px'
+},1000);
+});
+
+
+$("#resetBtn").click(function(){
+$("#robot").animate({
+left:'0px',
+opacity:1,
+width:'100px',
+height:'100px',
+lineHeight:'100px'
+},1000);
+});
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<h2>jQuery Custom Animation Demo</h2>
+
+<div id="robot">BOT</div>
+
+<button id="moveBtn">Move Robot</button>
+<button id="fadeBtn">Change Opacity</button>
+<button id="resizeBtn">Resize Robot</button>
+<button id="resetBtn">Reset</button>
+
+</body>
+</html>

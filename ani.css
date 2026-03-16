@@ -1,0 +1,22 @@
+body{
+font-family: Arial;
+text-align:center;
+background:#f5f5f5;
+}
+
+#robot{
+width:100px;
+height:100px;
+background:steelblue;
+position:relative;
+margin:40px auto;
+border-radius:10px;
+color:white;
+line-height:100px;
+font-weight:bold;
+}
+
+button{
+padding:10px 15px;
+margin:5px;
+}
